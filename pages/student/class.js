@@ -1,10 +1,10 @@
-import Maincontent from "@/components/dashboard/mainContent/Maincontent"
 import Sidebar from "@/components/Sidebar"
 import Navbar from "@/components/Navbar"
 import { Box, CssBaseline, ThemeProvider } from "@mui/material"
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
+import Maincontent from "@/components/classpage/Maincontent"
 
-const StudDashboard = () => {
+const classpage = () => {
 
     let myTheme = createTheme({
         palette: {
@@ -35,10 +35,10 @@ const StudDashboard = () => {
                 }}
             >
                 <Sidebar />
-                <Maincontent />
+                <Maincontent />        
             </Box>
         </ThemeProvider>
     )
 }
 
-export default StudDashboard
+export default classpage
