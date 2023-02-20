@@ -77,6 +77,7 @@ const Maincontent = () => {
                                 onChange={handleChange}
                                 sx={{
                                     alignSelf: 'center', 
+                                    mb: 2,
                                 }}
                             >
                                 <Tab   
@@ -90,7 +91,8 @@ const Maincontent = () => {
                                     }
                                     value='1'   
                                     sx={{   
-                                        color:'#000'
+                                        color:'#000',
+                                        p:0,
                                     }} 
                                 />
                                 <Tab   
@@ -123,12 +125,12 @@ const Maincontent = () => {
                                 />
                             </TabList>
                         </Box>
-                        <TabPanel value='1'>Syllabus Page</TabPanel> 
                         <TabPanel 
-                            value='2'
+                            value='1'
                             sx={{
                                 display: 'flex', 
                                 flexDirection: 'column',
+                                p: 0,
                             }}
                         >
                             <Stack 
@@ -139,7 +141,8 @@ const Maincontent = () => {
                             >
                                 <Box
                                     sx={{
-                                        bgcolor: 'grey',
+                                        bgcolor: 'primary.main',
+                                        borderRadius: '5px',
                                         width: '100%',
                                         p: 1,
                                         display: 'flex',
@@ -152,68 +155,75 @@ const Maincontent = () => {
                                     >   
                                         Week 1
                                     </Typography>
-                                    <Box    
-                                        sx={{
-                                            display:'flex',
-                                            justifyContent: 'space-around',
-                                        }}
-                                    >
-                                        <Box
-                                            id='asgmt-subsection'
-                                            sx={{
-                                                display:'flex',
-                                                flexDirection:'column',
-                                                justifyContent: 'center',
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <Typography 
-                                                variant='h6'
-                                                className={cabin700.className}
-                                            >
-                                                Assignments
-                                            </Typography>
-                                            <Stack
-                                                spacing={2}
-                                            >
-                                                <Typography 
-                                                    variant='h6'
-                                                    className={cabin400.className}
-                                                >
-                                                    Homework #1 Due: Feb 26
-                                                </Typography>
-                                                
-                                            </Stack>
-                                        </Box>
-                                        <Box
-                                            id='exam-quiz-subsection'
-                                            sx={{
-                                                display:'flex',
-                                                flexDirection:'column',
-                                                justifyContent: 'center',
-                                                alignItems: 'center',
-                                            }}
-                                        >
-                                            <Typography 
-                                                variant='h6'
-                                                className={cabin700.className}
-                                            >
-                                                Exams/Quizzes
-                                            </Typography>
-                                            <Stack
-                                                spacing={2}
-                                            >
-                                                
-                                            </Stack>
-
-                                        </Box>
-
-                                    </Box>
                                 </Box>
-
                             </Stack>
                         </TabPanel> 
-                        <TabPanel value='3'>Past Schedule Page</TabPanel> 
+                        <TabPanel 
+                            value='2'
+                            sx={{
+                                display: 'flex', 
+                                flexDirection: 'column',
+                                p: 0,
+                            }}
+                        >
+                            <Stack 
+                                spacing={2} 
+                                sx={{
+                                    width:'100%',
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        bgcolor: 'primary.main',
+                                        borderRadius: '5px',
+                                        width: '100%',
+                                        p: 1,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                    }}
+                                >
+                                    <Typography
+                                        variant='h6'
+                                        className={cabin700.className}
+                                    >   
+                                        Week 2
+                                    </Typography>
+                                </Box>
+                            </Stack>
+                        </TabPanel> 
+                        <TabPanel 
+                            value='3'
+                            sx={{
+                                display: 'flex', 
+                                flexDirection: 'column',
+                                p: 0,
+                            }}
+                        >
+                            <Stack 
+                                spacing={2} 
+                                sx={{
+                                    width:'100%',
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        bgcolor: 'primary.main',
+                                        borderRadius: '5px',
+                                        width: '100%',
+                                        p: 1,
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                    }}
+                                >
+                                    <Typography
+                                        variant='h6'
+                                        className={cabin700.className}
+                                    >   
+                                        Week 3
+                                    </Typography>
+                                </Box>
+                            </Stack>
+                        </TabPanel> 
                     </TabContext>
                 </Box>
             </Box>

@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material"
 import { Cabin } from '@next/font/google'
-import { Circle } from "@mui/icons-material"
+import { Celebration, Circle } from "@mui/icons-material"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -34,7 +34,7 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '25px',
+                            borderRadius: '5px',
                             bgcolor: 'primary.secondary'
                         }}
                     >
@@ -60,15 +60,8 @@ const ClassWidget = () => {
                             direction='row'
                             spacing={1}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
                             <Typography
-                                className={cabin400.className}
+                                className={cabin700.className}
                                 variant='h6'
                             >
                                 ASGMT:
@@ -77,31 +70,24 @@ const ClassWidget = () => {
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Homework #4 
+                                Homework #1 
                             </Typography>
                         </Stack>
                         <Stack
                             direction='row'
                             spacing={1}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
                             <Typography
-                                className={cabin400.className}
+                                className={cabin700.className}
                                 variant='h6'
                             >
-                                EXAM:
+                                ASGMT:
                             </Typography>
                             <Typography
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Chapter 13-16 
+                                Homework #2 
                             </Typography>
                         </Stack>
                     </Stack>
@@ -112,7 +98,7 @@ const ClassWidget = () => {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        borderRadius: '25px',
+                        height: '100%',
                         flexGrow: '1',
                         flexShrink: '1',
                     }}
@@ -121,7 +107,7 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '25px',
+                            borderRadius: '5px',
                             bgcolor: 'primary.secondary'
                         }}
                     >
@@ -136,62 +122,26 @@ const ClassWidget = () => {
                             CS 247
                         </Typography>
                     </Box>
-                    <Stack
-                        spacing={1}
+                    <Box    
+                        id='nothing-due'
                         sx={{
-                            mx: 3,
-                            my: 1,
+                            display: 'flex',
+                            height: '100%',
+                            m: 2,
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center',
                         }}
                     >
-                        <Stack
-                            direction='row'
-                            spacing={1}
+                        <Celebration fontSize='large' />    
+                        <Typography
+                            variant='h6'
+                            className={cabin700.className}
+                            sx={{mt:1}}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                ASGMT:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Homework #4 
-                            </Typography>
-                        </Stack>
-                        <Stack
-                            direction='row'
-                            spacing={1}
-                        >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                EXAM:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Chapter 13-16 
-                            </Typography>
-                        </Stack>
-                    </Stack>
+                            Nothing Due Today For This Class
+                        </Typography>
+                    </Box>
                 </Box>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -199,7 +149,6 @@ const ClassWidget = () => {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        borderRadius: '25px',
                         flexGrow: '1',
                         flexShrink: '1',
                     }}
@@ -208,7 +157,7 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '25px',
+                            borderRadius: '5px',
                             bgcolor: 'primary.secondary'
                         }}
                     >
@@ -234,15 +183,8 @@ const ClassWidget = () => {
                             direction='row'
                             spacing={1}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
                             <Typography
-                                className={cabin400.className}
+                                className={cabin700.className}
                                 variant='h6'
                             >
                                 ASGMT:
@@ -258,15 +200,8 @@ const ClassWidget = () => {
                             direction='row'
                             spacing={1}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
                             <Typography
-                                className={cabin400.className}
+                                className={cabin700.className}
                                 variant='h6'
                             >
                                 EXAM:
@@ -286,7 +221,6 @@ const ClassWidget = () => {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        borderRadius: '25px',
                         flexGrow: '1',
                         flexShrink: '1',
                     }}
@@ -295,7 +229,7 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '25px',
+                            borderRadius: '5px',
                             bgcolor: 'primary.secondary'
                         }}
                     >
@@ -321,15 +255,8 @@ const ClassWidget = () => {
                             direction='row'
                             spacing={1}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
                             <Typography
-                                className={cabin400.className}
+                                className={cabin700.className}
                                 variant='h6'
                             >
                                 ASGMT:
@@ -345,15 +272,8 @@ const ClassWidget = () => {
                             direction='row'
                             spacing={1}
                         >
-                            <Circle 
-                                fontSize='small' 
-                                sx={{
-                                    color: 'grey',
-                                    alignSelf: 'center',
-                                }}
-                            />
                             <Typography
-                                className={cabin400.className}
+                                className={cabin700.className}
                                 variant='h6'
                             >
                                 EXAM:

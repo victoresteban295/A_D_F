@@ -1,5 +1,5 @@
 import { Circle } from "@mui/icons-material"
-import { Box, Stack, Typography, Divider } from "@mui/material"
+import { Box, Stack, Typography, Divider, Grid } from "@mui/material"
 import { Cabin } from '@next/font/google'
 
 const cabin = Cabin({
@@ -29,7 +29,7 @@ const ScheduleWidget = () => {
                 id="today-schedule-widget-Title"
                 sx={{
                     bgcolor: 'primary.main',
-                    borderRadius: '25px',
+                    borderRadius: '5px',
                 }}
             >
                 <Typography
@@ -43,132 +43,182 @@ const ScheduleWidget = () => {
                 </Typography>
             </Box>
                 <Stack
-                    spacing={1}
+                    spacing={0}
                     sx={{
                         mx: 3,
                         my: 1,
                     }}
                 >
-                    <Stack
-                        direction='row'
+                    <Grid
+                        container
                         spacing={3}
                     >
-                        <Circle 
-                            fontSize='small' 
-                            sx={{
-                                color: '#57a773',
-                                alignSelf: 'center',
-                            }}
-                        />
-                        <Typography
-                            className={cabin.className}
-                            variant='h5'
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            8:00 AM - 9:00 AM
-                        </Typography>
-                        <Typography
-                            className={cabin.className}
-                            variant='h5'
+                            <Typography
+                                id='schedule-time'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                8:00 AM - 9:00 AM
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            Math 345 1A Lecture 
-                        </Typography>
-                        <Typography
-                            className={cabin.className}
-                            variant='h5'
+                            <Typography
+                                id='schedule-event'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                MATH 345 1A Lecture 
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            Odin Hall R# 305
-                        </Typography>
-                    </Stack>
-                    <Stack
-                        direction='row'
+                            <Typography
+                                id='schedule-location'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                Odin Hall R# 305
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Divider />
+                    <Grid
+                        container
+                        spacing={3}
+                        sx={{
+                            borderRadius: '5px',
+                        }}
+                    >
+                        <Grid
+                            item
+                            xs={4}
+                        >
+                            <Typography
+                                id='schedule-time'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                10:00 AM - 11:00 AM
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
+                        >
+                            <Typography
+                                id='schedule-event'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                CS 247 1A Lecture 
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
+                        >
+                            <Typography
+                                id='schedule-location'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                Norris Center R# 101
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Divider />
+                    <Grid
+                        container
                         spacing={3}
                     >
-                        <Circle 
-                            fontSize='small' 
-                            sx={{
-                                color: 'grey',
-                                alignSelf: 'center',
-                            }}
-                        />
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            10:00 AM - 11:00 AM
-                        </Typography>
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
+                            <Typography
+                                id='schedule-time'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                2:00 PM - 3:00 PM
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            CS 247 1A Lecture 
-                        </Typography>
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
+                            <Typography
+                                id='schedule-event'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                MATH 230 1A Lecture 
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            Norris Center R# 101
-                        </Typography>
-                    </Stack>
-                    <Stack
-                        direction='row'
+                            <Typography
+                                id='schedule-location'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                Odin Hall R# 302
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Divider />
+                    <Grid
+                        container
                         spacing={3}
                     >
-                        <Circle 
-                            fontSize='small' 
-                            sx={{
-                                color: 'grey',
-                                alignSelf: 'center',
-                            }}
-                        />
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            2:00 PM - 3:00 PM
-                        </Typography>
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
+                            <Typography
+                                id='schedule-time'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                5:00 PM - 6:00 PM
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            Math 230 1A Lecture 
-                        </Typography>
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
+                            <Typography
+                                id='schedule-event'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                CHEM 121 2A Lecture 
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={4}
                         >
-                            Odin Hall R# 302
-                        </Typography>
-                    </Stack>
-                    <Stack
-                        direction='row'
-                        spacing={3}
-                    >
-                        <Circle 
-                            fontSize='small' 
-                            sx={{
-                                color: 'grey',
-                                alignSelf: 'center',
-                            }}
-                        />
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
-                        >
-                            5:00 PM - 6:00 PM
-                        </Typography>
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
-                        >
-                            CHEM 121 2A Lecture 
-                        </Typography>
-                        <Typography
-                            className={cabin400.className}
-                            variant='h6'
-                        >
-                            Norris Center R# 204
-                        </Typography>
-                    </Stack>
+                            <Typography
+                                id='schedule-location'
+                                className={cabin.className}
+                                variant='h6'
+                            >
+                                Norris Center R# 204
+                            </Typography>
+                        </Grid>
+                    </Grid>
                 </Stack>
         </Box>
     )

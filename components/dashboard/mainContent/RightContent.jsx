@@ -26,7 +26,7 @@ const RightContent = () => {
                     display: 'flex',
                     width: '100%',
                     bgcolor: '#e63462',
-                    borderRadius: '25px',
+                    borderRadius: '5px',
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     px: 2,
