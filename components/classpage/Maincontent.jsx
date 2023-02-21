@@ -1,7 +1,10 @@
 import React from 'react'
-import { Box, Divider, Tab, Typography, Stack } from "@mui/material"
+import { Box, Divider, Tab, Typography, Stack, Grid } from "@mui/material"
 import { Cabin } from '@next/font/google'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
+import UpcomingSchedule from './UpcomingSchedule'
+import PastSchedule from './PastSchedule'
+import Syllabus from './Syllabus'
 
 const cabin700 = Cabin({
     weight: '700',
@@ -133,30 +136,7 @@ const Maincontent = () => {
                                 p: 0,
                             }}
                         >
-                            <Stack 
-                                spacing={2} 
-                                sx={{
-                                    width:'100%',
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        bgcolor: 'primary.main',
-                                        borderRadius: '5px',
-                                        width: '100%',
-                                        p: 1,
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                    }}
-                                >
-                                    <Typography
-                                        variant='h6'
-                                        className={cabin700.className}
-                                    >   
-                                        Week 1
-                                    </Typography>
-                                </Box>
-                            </Stack>
+                            <Syllabus />
                         </TabPanel> 
                         <TabPanel 
                             value='2'
@@ -166,30 +146,7 @@ const Maincontent = () => {
                                 p: 0,
                             }}
                         >
-                            <Stack 
-                                spacing={2} 
-                                sx={{
-                                    width:'100%',
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        bgcolor: 'primary.main',
-                                        borderRadius: '5px',
-                                        width: '100%',
-                                        p: 1,
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                    }}
-                                >
-                                    <Typography
-                                        variant='h6'
-                                        className={cabin700.className}
-                                    >   
-                                        Week 2
-                                    </Typography>
-                                </Box>
-                            </Stack>
+                            <UpcomingSchedule />
                         </TabPanel> 
                         <TabPanel 
                             value='3'
@@ -199,30 +156,7 @@ const Maincontent = () => {
                                 p: 0,
                             }}
                         >
-                            <Stack 
-                                spacing={2} 
-                                sx={{
-                                    width:'100%',
-                                }}
-                            >
-                                <Box
-                                    sx={{
-                                        bgcolor: 'primary.main',
-                                        borderRadius: '5px',
-                                        width: '100%',
-                                        p: 1,
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                    }}
-                                >
-                                    <Typography
-                                        variant='h6'
-                                        className={cabin700.className}
-                                    >   
-                                        Week 3
-                                    </Typography>
-                                </Box>
-                            </Stack>
+                            <PastSchedule />
                         </TabPanel> 
                     </TabContext>
                 </Box>
