@@ -18,6 +18,7 @@ const RightContent = () => {
             id="rightside-content"
             sx={{
                 width: '500px',
+                mx: 1,
             }}
         >
             <Box

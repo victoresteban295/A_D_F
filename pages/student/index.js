@@ -13,8 +13,8 @@ const StudDashboard = () => {
                 secondary: '#06d6a0'
             },
             background: {
-                paper: '#ebf5ee',
-                default: '#ebf5ee'
+                paper: '#fff',
+                default: '#fff'
             },
             text: {
                 primary: '#000'

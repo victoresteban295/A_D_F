@@ -5,6 +5,7 @@ import { TabContext, TabList, TabPanel } from '@mui/lab'
 import UpcomingSchedule from './UpcomingSchedule'
 import PastSchedule from './PastSchedule'
 import Syllabus from './Syllabus'
+import RightClassContent from './RightClassContent'
 
 const cabin700 = Cabin({
     weight: '700',
@@ -18,7 +19,7 @@ const cabin400 = Cabin({
 
 const Maincontent = () => {
 
-    const [value, setValue] = React.useState('2')
+    const [value, setValue] = React.useState('1')
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -161,6 +162,7 @@ const Maincontent = () => {
                     </TabContext>
                 </Box>
             </Box>
+            <RightClassContent />
         </Box>
     )
 }

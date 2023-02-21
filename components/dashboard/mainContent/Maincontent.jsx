@@ -3,6 +3,7 @@ import { Cabin } from '@next/font/google'
 import ScheduleWidget from "./ScheduleWidget"
 import ClassWidget from "./ClassWidget"
 import RightContent from "./RightContent"
+import WeatherTime from "./WeatherTime"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -47,6 +48,7 @@ const Maincontent = () => {
                     </Typography>
                     <Divider sx={{bgcolor: 'text.primary'}}/>
                 </Box>
+                <WeatherTime />
                 <ScheduleWidget />
                 <ClassWidget />
             </Box>

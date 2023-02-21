@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, Stack, Typography } from "@mui/material"
 import { Cabin } from '@next/font/google'
-import { Celebration, Circle } from "@mui/icons-material"
+import { Celebration } from "@mui/icons-material"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -34,15 +34,14 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '5px',
-                            bgcolor: 'primary.secondary'
                         }}
                     >
                         <Typography
                             variant='h6'
                             className={cabin700.className}
                             sx={{
-                                mx: 2,
+                                bgcolor: '#b8b8b8',
+                                borderRadius: '5px',
                                 px: 2,
                             }}
                         >
@@ -51,6 +50,7 @@ const ClassWidget = () => {
                     </Box>
                     <Stack
                         spacing={1}
+                        divider={<Divider flexItem variant='middle' />}
                         sx={{
                             mx: 3,
                             my: 1,
@@ -70,7 +70,7 @@ const ClassWidget = () => {
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Homework #1 
+                                Homework #1 Chapter 1-3 
                             </Typography>
                         </Stack>
                         <Stack
@@ -87,7 +87,7 @@ const ClassWidget = () => {
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Homework #2 
+                                Homework #2 Chapter 3-5
                             </Typography>
                         </Stack>
                     </Stack>
@@ -107,15 +107,14 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '5px',
-                            bgcolor: 'primary.secondary'
                         }}
                     >
                         <Typography
                             variant='h6'
                             className={cabin700.className}
                             sx={{
-                                mx: 2,
+                                bgcolor: '#b8b8b8',
+                                borderRadius: '5px',
                                 px: 2,
                             }}
                         >
@@ -157,15 +156,14 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '5px',
-                            bgcolor: 'primary.secondary'
                         }}
                     >
                         <Typography
                             variant='h6'
                             className={cabin700.className}
                             sx={{
-                                mx: 2,
+                                bgcolor: '#b8b8b8',
+                                borderRadius: '5px',
                                 px: 2,
                             }}
                         >
@@ -174,6 +172,7 @@ const ClassWidget = () => {
                     </Box>
                     <Stack
                         spacing={1}
+                        divider={<Divider flexItem variant='middle' />}
                         sx={{
                             mx: 3,
                             my: 1,
@@ -193,7 +192,7 @@ const ClassWidget = () => {
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Homework #4 
+                                Homework #4 Chapter 8-9 
                             </Typography>
                         </Stack>
                         <Stack
@@ -210,7 +209,7 @@ const ClassWidget = () => {
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Chapter 13-16 
+                                Midterm Exam Chapter 1-9
                             </Typography>
                         </Stack>
                     </Stack>
@@ -229,15 +228,14 @@ const ClassWidget = () => {
                         id="class-title"
                         sx={{
                             width: '100%',
-                            borderRadius: '5px',
-                            bgcolor: 'primary.secondary'
                         }}
                     >
                         <Typography
                             variant='h6'
                             className={cabin700.className}
                             sx={{
-                                mx: 2,
+                                bgcolor: '#b8b8b8',
+                                borderRadius: '5px',
                                 px: 2,
                             }}
                         >
@@ -246,6 +244,7 @@ const ClassWidget = () => {
                     </Box>
                     <Stack
                         spacing={1}
+                        divider={<Divider flexItem variant='middle' />}
                         sx={{
                             mx: 3,
                             my: 1,
@@ -265,24 +264,7 @@ const ClassWidget = () => {
                                 className={cabin400.className}
                                 variant='h6'
                             >
-                                Homework #4 
-                            </Typography>
-                        </Stack>
-                        <Stack
-                            direction='row'
-                            spacing={1}
-                        >
-                            <Typography
-                                className={cabin700.className}
-                                variant='h6'
-                            >
-                                EXAM:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Chapter 13-16 
+                                Homework #4 P.55-58
                             </Typography>
                         </Stack>
                     </Stack>
