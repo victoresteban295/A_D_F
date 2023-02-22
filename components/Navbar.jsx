@@ -29,7 +29,7 @@ const Navbar = () => {
                                     mx: 1,
                                 }}
                             >
-                                Where's My Prof ?
+                                Plan It All
                             </Typography> 
                         </Box>
                         <Avatar sx={{bgcolor: 'grey', mx: 3}}>VE</Avatar>
