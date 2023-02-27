@@ -13,264 +13,190 @@ const cabin400 = Cabin({
 })
 const ClassWidget = () => {
     return (
-        <Grid 
-            container  
-            spacing={2}
+        <Stack
             sx={{
-                p:2,
+                boxShadow: '1px 1px 4px 2px #cecece',
+                borderRadius: '5px',
+                my: 1,
             }}
         >
-            <Grid item xs={12} md={6}>
-                <Box        
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        borderRadius: '25px',
-                        flexGrow: '1',
-                        flexShrink: '1',
-                    }}
+            <Box
+                id='due-today-title'
+                sx={{
+                    px: 2,
+                }}
+            >
+                <Typography
+                    variant='h6'
+                    className={cabin700.className}
                 >
-                    <Box
-                        id="class-title"
-                        sx={{
-                            width: '100%',
-                        }}
+                    Due Today
+                </Typography>
+                <Divider />
+            </Box>
+            <Stack
+                id='due-today-list'
+                spacing={1}
+                divider={<Divider />}
+                sx={{
+                    px: 6,
+                    my: 2,
+                }}
+            >
+                <Grid
+                    id='single-assignment'
+                    container
+                >
+                    <Grid
+                        item
+                        xs={4}
                     >
                         <Typography
-                            variant='h6'
+                            variant='body1'
                             className={cabin700.className}
-                            sx={{
-                                bgcolor: '#b8b8b8',
-                                borderRadius: '5px',
-                                px: 2,
-                            }}
                         >
-                            MATH 345 
+                            MATH 345
                         </Typography>
-                    </Box>
-                    <Stack
-                        spacing={1}
-                        divider={<Divider flexItem variant='middle' />}
-                        sx={{
-                            mx: 3,
-                            my: 1,
-                        }}
-                    >
-                        <Stack
-                            direction='row'
-                            spacing={1}
-                        >
-                            <Typography
-                                className={cabin700.className}
-                                variant='h6'
-                            >
-                                ASGMT:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Homework #1 Chapter 1-3 
-                            </Typography>
-                        </Stack>
-                        <Stack
-                            direction='row'
-                            spacing={1}
-                        >
-                            <Typography
-                                className={cabin700.className}
-                                variant='h6'
-                            >
-                                ASGMT:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Homework #2 Chapter 3-5
-                            </Typography>
-                        </Stack>
-                    </Stack>
-                </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-                <Box        
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        height: '100%',
-                        flexGrow: '1',
-                        flexShrink: '1',
-                    }}
-                >
-                    <Box
-                        id="class-title"
-                        sx={{
-                            width: '100%',
-                        }}
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
                     >
                         <Typography
-                            variant='h6'
+                            variant='body1'
+                            className={cabin400.className}
+                        >
+                            Assignment
+                        </Typography>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
+                    >
+                        <Typography
+                            variant='body1'
+                            className={cabin400.className}
+                        >
+                            Homework #1
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid
+                    id='single-assignment'
+                    container
+                >
+                    <Grid
+                        item
+                        xs={4}
+                    >
+                        <Typography
+                            variant='body1'
                             className={cabin700.className}
-                            sx={{
-                                bgcolor: '#b8b8b8',
-                                borderRadius: '5px',
-                                px: 2,
-                            }}
                         >
                             CS 247
                         </Typography>
-                    </Box>
-                    <Box    
-                        id='nothing-due'
-                        sx={{
-                            display: 'flex',
-                            height: '100%',
-                            m: 2,
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                        }}
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
                     >
-                        <Celebration fontSize='large' />    
                         <Typography
-                            variant='h6'
-                            className={cabin700.className}
-                            sx={{mt:1}}
+                            variant='body1'
+                            className={cabin400.className}
                         >
-                            Nothing Due Today For This Class
+                            Assignment
                         </Typography>
-                    </Box>
-                </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-                <Box        
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        flexGrow: '1',
-                        flexShrink: '1',
-                    }}
-                >
-                    <Box
-                        id="class-title"
-                        sx={{
-                            width: '100%',
-                        }}
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
                     >
                         <Typography
-                            variant='h6'
+                            variant='body1'
+                            className={cabin400.className}
+                        >
+                            Homework #3
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid
+                    id='single-assignment'
+                    container
+                >
+                    <Grid
+                        item
+                        xs={4}
+                    >
+                        <Typography
+                            variant='body1'
                             className={cabin700.className}
-                            sx={{
-                                bgcolor: '#b8b8b8',
-                                borderRadius: '5px',
-                                px: 2,
-                            }}
                         >
                             MATH 230
                         </Typography>
-                    </Box>
-                    <Stack
-                        spacing={1}
-                        divider={<Divider flexItem variant='middle' />}
-                        sx={{
-                            mx: 3,
-                            my: 1,
-                        }}
-                    >
-                        <Stack
-                            direction='row'
-                            spacing={1}
-                        >
-                            <Typography
-                                className={cabin700.className}
-                                variant='h6'
-                            >
-                                ASGMT:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Homework #4 Chapter 8-9 
-                            </Typography>
-                        </Stack>
-                        <Stack
-                            direction='row'
-                            spacing={1}
-                        >
-                            <Typography
-                                className={cabin700.className}
-                                variant='h6'
-                            >
-                                EXAM:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Midterm Exam Chapter 1-9
-                            </Typography>
-                        </Stack>
-                    </Stack>
-                </Box>
-            </Grid>
-            <Grid item xs={12} md={6}>
-                <Box        
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        flexGrow: '1',
-                        flexShrink: '1',
-                    }}
-                >
-                    <Box
-                        id="class-title"
-                        sx={{
-                            width: '100%',
-                        }}
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
                     >
                         <Typography
-                            variant='h6'
-                            className={cabin700.className}
-                            sx={{
-                                bgcolor: '#b8b8b8',
-                                borderRadius: '5px',
-                                px: 2,
-                            }}
+                            variant='body1'
+                            className={cabin400.className}
                         >
-                            CHEM 121
+                            Assignment
                         </Typography>
-                    </Box>
-                    <Stack
-                        spacing={1}
-                        divider={<Divider flexItem variant='middle' />}
-                        sx={{
-                            mx: 3,
-                            my: 1,
-                        }}
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
                     >
-                        <Stack
-                            direction='row'
-                            spacing={1}
+                        <Typography
+                            variant='body1'
+                            className={cabin400.className}
                         >
-                            <Typography
-                                className={cabin700.className}
-                                variant='h6'
-                            >
-                                ASGMT:
-                            </Typography>
-                            <Typography
-                                className={cabin400.className}
-                                variant='h6'
-                            >
-                                Homework #4 P.55-58
-                            </Typography>
-                        </Stack>
-                    </Stack>
-                </Box>
-            </Grid>
-        </Grid> 
+                            Homework #4
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid
+                    id='single-assignment'
+                    container
+                >
+                    <Grid
+                        item
+                        xs={4}
+                    >
+                        <Typography
+                            variant='body1'
+                            className={cabin700.className}
+                        >
+                            MATH 230
+                        </Typography>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
+                    >
+                        <Typography
+                            variant='body1'
+                            className={cabin400.className}
+                        >
+                            Quiz
+                        </Typography>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={4}
+                    >
+                        <Typography
+                            variant='body1'
+                            className={cabin400.className}
+                        >
+                            Quiz #1
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Stack>
+        </Stack>
     )
 }
 

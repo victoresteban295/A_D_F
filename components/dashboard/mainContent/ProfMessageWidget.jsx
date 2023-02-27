@@ -30,7 +30,7 @@ const ProfMessageWidget = () => {
                 >
                     Conversation With Professor
                 </Typography>
-                <Divider variant='middle' /> 
+                <Divider /> 
             </Box> 
             <Stack
                 id='prof-messages-section'

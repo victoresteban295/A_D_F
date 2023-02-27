@@ -6,6 +6,7 @@ import RightContent from "./RightContent"
 import WeatherTime from "./WeatherTime"
 import EventsWidget from "./EventsWidget"
 import ProfMessageWidget from "./ProfMessageWidget"
+import ChecklistWidget from "./ChecklistWidget"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -40,6 +41,7 @@ const NewUpdatedDash = () => {
                 }}
             >
                 <WeatherTime />
+                <ChecklistWidget />
                 <ProfMessageWidget />
             </Stack>
             <RightContent />
