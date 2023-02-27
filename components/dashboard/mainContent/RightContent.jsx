@@ -1,6 +1,6 @@
 import { Avatar, Box, Divider, Stack, Typography } from "@mui/material"
 import { Cabin } from '@next/font/google'
-import { NotificationImportant } from "@mui/icons-material"
+import { Campaign } from "@mui/icons-material"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -40,7 +40,7 @@ const RightContent = () => {
                         alignItems: 'center',
                     }}
                 >
-                    <NotificationImportant />
+                    <Campaign />
                     <Typography
                         variant='h5'
                         className={cabin700.className}
@@ -59,6 +59,9 @@ const RightContent = () => {
                 id='message-right-section'
                 sx={{
                     my: 4,
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    p: 2,
+                    borderRadius: '5px',
                 }}
             >
                 <Stack

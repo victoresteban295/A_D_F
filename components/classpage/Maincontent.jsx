@@ -55,7 +55,7 @@ const Maincontent = () => {
                     }}
                 >
                     <Typography
-                        variant='h3'
+                        variant='h4'
                         className={cabin700.className}
                     >
                         MATH 345 1A: Differential Equations 

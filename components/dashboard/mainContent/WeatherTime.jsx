@@ -1,5 +1,7 @@
-import { Divider, Stack, Typography } from "@mui/material"
+import { Box, Divider, Stack, Typography } from "@mui/material"
 import { Cabin } from '@next/font/google'
+import Image from "next/image" 
+import Sunny from 'images/sunny.svg'
 
 const cabin400 = Cabin({
     weight: '400',
@@ -18,10 +20,14 @@ const WeatherTime = () => {
             justifyContent='space-around'
             alignItems='center'
             divider={<Divider orientation="vertical" variant='middle' sx={{bgcolor:'#000'}} />}
-            sx={{mt: 2}}
+            sx={{
+                p: 2,
+                boxShadow: '1px 1px 4px 2px #cecece',
+                borderRadius: '5px',
+            }}
         >
             <Stack
-                id="weather-section"
+                id="weather-subsection"
                 spacing={0}
                 justifyContent='center'
                 alignItems='center'
@@ -45,7 +51,7 @@ const WeatherTime = () => {
                 </Typography>
             </Stack>
             <Stack
-                id="weather-section"
+                id="time-subsection"
                 spacing={0}
                 justifyContent='center'
                 alignItems='center'

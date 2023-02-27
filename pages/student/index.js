@@ -3,6 +3,8 @@ import Sidebar from "@/components/Sidebar"
 import Navbar from "@/components/Navbar"
 import { Box, CssBaseline, ThemeProvider } from "@mui/material"
 import { createTheme, responsiveFontSizes } from '@mui/material/styles'
+import UpdateMainContent from "@/components/dashboard/mainContent/UpdateMainContent"
+import NewUpdatedDash from "@/components/dashboard/mainContent/NewUpdatedDash"
 
 const StudDashboard = () => {
 
@@ -35,7 +37,9 @@ const StudDashboard = () => {
                 }}
             >
                 <Sidebar />
-                <Maincontent />
+                {/* <Maincontent /> */}
+                {/* <UpdateMainContent /> */}
+                <NewUpdatedDash />
             </Box>
         </ThemeProvider>
     )

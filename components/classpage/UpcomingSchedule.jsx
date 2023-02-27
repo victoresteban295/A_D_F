@@ -15,22 +15,23 @@ const cabin400 = Cabin({
 const UpcomingSchedule = () => {
     return (
         <Stack
-            spacing={1} 
+            spacing={2} 
             sx={{
                 width:'100%',
             }}
         >
             <Stack 
-                spacing={1} 
                 sx={{
                     width:'100%',
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    borderRadius: '5px',
                 }}
             >
                 <Box
                     id="week-title"
                     sx={{
                         bgcolor: 'primary.main',
-                        borderRadius: '5px',
+                        borderRadius: '5px 5px 0 0',
                         width: '100%',
                         px: 1,
                         display: 'flex',
@@ -49,7 +50,10 @@ const UpcomingSchedule = () => {
                     direction='row'
                     alignItems='flex-start'     
                     justifyContent='space-around' 
-                    sx={{px:2}}
+                    sx={{
+                        py:1,
+                        px: 2,
+                    }}
                 >
                     <Grid    
                         item 
@@ -219,16 +223,17 @@ const UpcomingSchedule = () => {
                 </Grid>
             </Stack>
             <Stack 
-                spacing={1} 
                 sx={{
                     width:'100%',
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    borderRadius: '5px',
                 }}
             >
                 <Box
                     id="week-title"
                     sx={{
                         bgcolor: 'primary.main',
-                        borderRadius: '5px',
+                        borderRadius: '5px 5px 0 0',
                         width: '100%',
                         px: 1,
                         display: 'flex',
@@ -247,7 +252,10 @@ const UpcomingSchedule = () => {
                     direction='row'
                     alignItems='flex-start'     
                     justifyContent='space-around' 
-                    sx={{px:2}}
+                    sx={{
+                        py:1,
+                        px: 2,
+                    }}
                 >
                     <Grid    
                         item 
@@ -362,16 +370,17 @@ const UpcomingSchedule = () => {
                 </Grid>
             </Stack>
             <Stack 
-                spacing={1} 
                 sx={{
                     width:'100%',
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    borderRadius: '5px',
                 }}
             >
                 <Box
                     id="week-title"
                     sx={{
                         bgcolor: 'primary.main',
-                        borderRadius: '5px',
+                        borderRadius: '5px 5px 0 0',
                         width: '100%',
                         px: 1,
                         display: 'flex',
@@ -390,7 +399,10 @@ const UpcomingSchedule = () => {
                     direction='row'
                     alignItems='flex-start'     
                     justifyContent='space-around' 
-                    sx={{px:2}}
+                    sx={{
+                        py:1,
+                        px: 2,
+                    }}
                 >
                     <Grid    
                         item 
@@ -510,16 +522,17 @@ const UpcomingSchedule = () => {
                 </Grid>
             </Stack>
             <Stack 
-                spacing={1} 
                 sx={{
                     width:'100%',
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    borderRadius: '5px',
                 }}
             >
                 <Box
                     id="week-title"
                     sx={{
                         bgcolor: 'primary.main',
-                        borderRadius: '5px',
+                        borderRadius: '5px 5px 0 0',
                         width: '100%',
                         px: 1,
                         display: 'flex',
@@ -538,7 +551,10 @@ const UpcomingSchedule = () => {
                     direction='row'
                     alignItems='flex-start'     
                     justifyContent='space-around' 
-                    sx={{px:2}}
+                    sx={{
+                        py:1,
+                        px: 2,
+                    }}
                 >
                     <Grid    
                         item 

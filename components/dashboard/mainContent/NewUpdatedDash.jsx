@@ -1,9 +1,11 @@
-import { Box, Divider, Typography } from "@mui/material"
+import { Box, Divider, Grid, Typography, Stack } from "@mui/material"
 import { Cabin } from '@next/font/google'
 import ScheduleWidget from "./ScheduleWidget"
 import ClassWidget from "./ClassWidget"
 import RightContent from "./RightContent"
 import WeatherTime from "./WeatherTime"
+import EventsWidget from "./EventsWidget"
+import ProfMessageWidget from "./ProfMessageWidget"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -15,7 +17,7 @@ const cabin400 = Cabin({
     subsets: ['latin'],
 })
 
-const Maincontent = () => {
+const NewUpdatedDash = () => {
     return (
         <Box
             id='main-content'
@@ -27,24 +29,22 @@ const Maincontent = () => {
                 my: 2,
             }}
         >
-            <Box
-                id='center-content'
+            <EventsWidget />
+            <Stack
+                spacing={1}
                 sx={{
-                    maxWidth: '1000px',
+                    maxWidth: '750px',
                     flexGrow: '1',
                     flexShrink: '1',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    mx: 2,
+                    mx: 1,
                 }}
             >
                 <WeatherTime />
-                {/* <ScheduleWidget /> */}
-                {/* <ClassWidget /> */}
-            </Box>
+                <ProfMessageWidget />
+            </Stack>
             <RightContent />
         </Box>
     )
 }
 
-export default Maincontent
+export default NewUpdatedDash

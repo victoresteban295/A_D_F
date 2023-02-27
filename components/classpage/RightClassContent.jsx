@@ -58,7 +58,12 @@ const RightClassContent = () => {
             </Box>
             <Stack
                 id='professor-convo'
-                spacing={1}
+                spacing={0}
+                sx={{
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    borderRadius: '5px',
+                    px: 1,
+                }}
             >
                 <Stack 
                     id="title"
@@ -66,24 +71,24 @@ const RightClassContent = () => {
                     justifyContent='space-between'
                     alignItems='center'
                     sx={{
-                        bgcolor:'primary.main',
-                        borderRadius:'5px',
-                        px: 1,
+                        p: 1,
                     }}
                 >
                     <Typography
                         variant='h6'
                         className={cabin700.className}
                     >
-                        Conversation with Prof
+                        Conversation with Professor
                     </Typography>
                     <Expand />
                 </Stack>
+                <Divider variant='middle' />
                 <Box
                     id='class-message'
                     sx={{
                         display: 'flex',
                         alignItems: 'center',
+                        p: 1,
                     }}
                 >
                     <Avatar>    
@@ -114,19 +119,22 @@ const RightClassContent = () => {
                 </Box>
             </Stack>
             <Stack
-                spacing={1}
+                sx={{
+                    boxShadow: '1px 1px 4px 2px #cecece',
+                    borderRadius: '5px',
+                    p: 1,
+                }}
             >
                 <Typography
                     variant='h6'
                     className={cabin700.className}
                     sx={{
-                        bgcolor: 'primary.main',
-                        borderRadius: '5px',
                         px: 1,
                     }}
                 >
                     Due Today
                 </Typography>
+                <Divider />
                 <Stack
                     id="assign-title-stack"
                     spacing={0.5}
