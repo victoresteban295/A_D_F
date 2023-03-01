@@ -59,6 +59,7 @@ const ChecklistWidget = () => {
                     <Divider variant='middle' />
                     <Stack
                         id='checklist-stack'
+                        divider={<Divider variant='middle' />}
                         sx={{
                             my: 1,
                         }}
@@ -270,6 +271,7 @@ const ChecklistWidget = () => {
                 <Divider variant='middle' />
                 <Stack
                     id='checklist-stack'
+                    divider={<Divider variant='middle' />}
                     sx={{
                         my: 1,
                     }}

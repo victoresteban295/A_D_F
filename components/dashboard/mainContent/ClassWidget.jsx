@@ -17,7 +17,6 @@ const ClassWidget = () => {
             sx={{
                 boxShadow: '1px 1px 4px 2px #cecece',
                 borderRadius: '5px',
-                my: 1,
             }}
         >
             <Box
@@ -49,7 +48,8 @@ const ClassWidget = () => {
                 >
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -60,7 +60,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -71,7 +72,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={12}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -87,7 +89,8 @@ const ClassWidget = () => {
                 >
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -98,7 +101,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -109,7 +113,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={12}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -125,7 +130,8 @@ const ClassWidget = () => {
                 >
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -136,7 +142,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -147,7 +154,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={12}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -163,7 +171,8 @@ const ClassWidget = () => {
                 >
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -174,7 +183,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'
@@ -185,7 +195,8 @@ const ClassWidget = () => {
                     </Grid>
                     <Grid
                         item
-                        xs={4}
+                        xs={6}
+                        md={4}
                     >
                         <Typography
                             variant='body1'

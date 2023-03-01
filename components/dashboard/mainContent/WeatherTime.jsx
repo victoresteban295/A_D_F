@@ -57,6 +57,8 @@ const WeatherTime = () => {
                 alignItems='center'
                 sx={{
                     width: '100%',
+                    mx: 1,
+                    textAlign: 'center',
                 }}
             >
                 <Typography

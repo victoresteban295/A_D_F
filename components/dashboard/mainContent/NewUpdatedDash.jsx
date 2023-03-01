@@ -7,6 +7,7 @@ import WeatherTime from "./WeatherTime"
 import EventsWidget from "./EventsWidget"
 import ProfMessageWidget from "./ProfMessageWidget"
 import ChecklistWidget from "./ChecklistWidget"
+import Reminders from "./Reminders"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -30,20 +31,33 @@ const NewUpdatedDash = () => {
                 my: 2,
             }}
         >
-            <EventsWidget />
-            <Stack
-                spacing={1}
+            <Box
                 sx={{
-                    maxWidth: '750px',
+                    display: 'flex',
+                    maxWidth: '1500px',
                     flexGrow: '1',
                     flexShrink: '1',
-                    mx: 1,
+                    display: 'flex',
+                    flexDirection: {xs: 'column', md: 'row'},
                 }}
             >
-                <WeatherTime />
-                <ChecklistWidget />
-                <ProfMessageWidget />
-            </Stack>
+                <EventsWidget />
+                <Stack
+                    spacing={1}
+                    sx={{
+                        maxWidth: '750px',
+                        flexGrow: '1',
+                        flexShrink: '1',
+                        mx: 1,
+                    }}
+                >
+                    <WeatherTime />
+                    <Reminders />
+                    <ChecklistWidget />
+                    <ClassWidget />
+                    {/* <ProfMessageWidget /> */}
+                </Stack>
+            </Box>
             <RightContent />
         </Box>
     )

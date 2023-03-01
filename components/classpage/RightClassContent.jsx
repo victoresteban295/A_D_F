@@ -16,9 +16,10 @@ const RightClassContent = () => {
     return (
         <Stack
             id="rightside-content"
-            spacing={4}
+            spacing={1}
             sx={{
-                maxWidth: '500px',
+                display : {xs: 'none', md: 'inline'},
+                width: '500px',
                 mx: 1,
             }}
         >

@@ -17,6 +17,7 @@ const Sidebar = () => {
         <Box
             id='left-sidebar'
             sx={{
+                display : {xs: 'none', md: 'inline'},
                 width: '200px',
                 p: 3,
             }}

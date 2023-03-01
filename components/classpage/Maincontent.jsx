@@ -65,11 +65,11 @@ const Maincontent = () => {
                 <Box
                     id='classpage-tabsetup'
                     sx={{
-                        width: '100%',
+                        maxWidth: '100%',
                         my: 1,
                     }}
                 >
-                    <TabContext value={value} sx={{width: '100%'}}>
+                    <TabContext value={value} sx={{maxWidth: '100%'}}>
                         <Box   
                             sx={{
                                 borderColor: 'text.primary',
@@ -78,6 +78,9 @@ const Maincontent = () => {
                             }}
                         >
                             <TabList    
+                                variant='scrollable'
+                                /* scrollButtons */
+                                /* allowScrollButtonsMobile */
                                 onChange={handleChange}
                                 sx={{
                                     alignSelf: 'center', 

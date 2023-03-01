@@ -19,7 +19,10 @@ const EventsWidget = () => {
             sx={{
                 boxShadow: '1px 1px 4px 2px #cecece',
                 borderRadius: '5px',
-                width: '250px'
+                /* width: '250px', */
+                width: {xs: 'auto', md: '250px'},
+                mx: {xs: 1, md: 0},
+                mb: {xs: 1, md: 0},
             }}
         >
             <Stack

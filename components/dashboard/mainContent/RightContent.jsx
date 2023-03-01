@@ -2,6 +2,7 @@ import { Avatar, Box, Divider, Stack, Typography } from "@mui/material"
 import { Cabin } from '@next/font/google'
 import { Campaign } from "@mui/icons-material"
 import ClassWidget from "./ClassWidget"
+import ProfMessageWidget from "./ProfMessageWidget"
 
 const cabin700 = Cabin({
     weight: '700',
@@ -15,9 +16,11 @@ const cabin400 = Cabin({
 
 const RightContent = () => {
     return (
-        <Box
+        <Stack
             id="rightside-content"
+            spacing={1}
             sx={{
+                display : {xs: 'none', md: 'inline'},
                 width: '500px',
                 mx: 1,
             }}
@@ -56,8 +59,9 @@ const RightContent = () => {
                     3
                 </Typography>
             </Box>
-            <ClassWidget />
-        </Box>
+            {/* <ClassWidget /> */}
+            <ProfMessageWidget />
+        </Stack>
 
     )
 }
