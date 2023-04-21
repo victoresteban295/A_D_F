@@ -21,6 +21,7 @@ const WeatherTime = () => {
             alignItems='center'
             divider={<Divider orientation="vertical" variant='middle' sx={{bgcolor:'#000'}} />}
             sx={{
+                bgcolor: 'widget.background',
                 p: 2,
                 boxShadow: '1px 1px 4px 2px #cecece',
                 borderRadius: '5px',

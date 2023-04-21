@@ -165,7 +165,7 @@ const Maincontent = () => {
                     </TabContext>
                 </Box>
             </Box>
-            <RightClassContent />
+            {/* <RightClassContent /> */}
         </Box>
     )
 }

@@ -34,7 +34,7 @@ const NewUpdatedDash = () => {
             <Box
                 sx={{
                     display: 'flex',
-                    maxWidth: '1500px',
+                    width: '1000px', //Prev Value: 1000px
                     flexGrow: '1',
                     flexShrink: '1',
                     display: 'flex',
@@ -43,22 +43,22 @@ const NewUpdatedDash = () => {
             >
                 <EventsWidget />
                 <Stack
-                    spacing={1}
+                    spacing={3}
                     sx={{
                         maxWidth: '750px',
                         flexGrow: '1',
                         flexShrink: '1',
-                        mx: 1,
+                        mx: 3,
                     }}
                 >
                     <WeatherTime />
+                    <ClassWidget />
                     <Reminders />
                     <ChecklistWidget />
-                    <ClassWidget />
                     {/* <ProfMessageWidget /> */}
                 </Stack>
             </Box>
-            <RightContent />
+            {/* <RightContent /> */}
         </Box>
     )
 }

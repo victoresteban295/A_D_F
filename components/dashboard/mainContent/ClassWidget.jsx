@@ -15,6 +15,7 @@ const ClassWidget = () => {
     return (
         <Stack
             sx={{
+                bgcolor: 'widget.background',
                 boxShadow: '1px 1px 4px 2px #cecece',
                 borderRadius: '5px',
             }}

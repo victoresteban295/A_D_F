@@ -15,11 +15,14 @@ const StudDashboard = () => {
                 secondary: '#06d6a0'
             },
             background: {
-                paper: '#fff',
-                default: '#fff'
+                paper: '#f8f9fa',
+                default: '#f8f9fa',
             },
             text: {
-                primary: '#000'
+                primary: '#000',
+            },
+            widget: {
+                background: '#fff',
             },
         } 
     })

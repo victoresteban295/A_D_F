@@ -17,6 +17,7 @@ const ChecklistWidget = () => {
         <Grid
             container
             sx={{
+                bgcolor: 'widget.background',
                 minHeight: '100px',
                 boxShadow: '1px 1px 4px 2px #cecece',
                 borderRadius: '5px',

@@ -17,6 +17,7 @@ const EventsWidget = () => {
             id='events-widget'                  
             spacing={2}
             sx={{
+                bgcolor: 'widget.background',
                 boxShadow: '1px 1px 4px 2px #cecece',
                 borderRadius: '5px',
                 /* width: '250px', */
