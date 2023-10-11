@@ -32,7 +32,7 @@ For educational institutions looking to boost academic performance, Academic Das
 ### Project Structure
 
 ```
-.
+src
 ├── app
 ├── components
 ├── lib
@@ -42,3 +42,17 @@ For educational institutions looking to boost academic performance, Academic Das
 └── middleware.js
 ```
 
+- `app` directory - Nextjs Routes
+- `components` directory - React Components
+- `lib/actions` directory - Nextjs Server Actions
+- `lib/schemas` directory - Zod Schemas
+- `theme` directory - Project's Custom Material UI Theme
+- `middleware.js` file - Nextjs Middleware
+
+## Web Pages
+
+### Login Page
+#### Features
+
+
+  
