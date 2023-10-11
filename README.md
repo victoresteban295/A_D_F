@@ -30,4 +30,15 @@ For educational institutions looking to boost academic performance, Academic Das
 - [Zod](https://zod.dev/) - Input Validation
 
 ### Project Structure
-- src/app
+
+```
+.
+├── app
+├── components
+├── lib
+│   ├── actions
+│   └── schemas
+├── theme
+└── middleware.js
+```
+
