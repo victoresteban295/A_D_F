@@ -17,3 +17,17 @@
   - [Calendar Page](#calendar-page)
   - [Checklist Page](#checklist-page)
   - [Reminders Page](#reminders-page) 
+
+## About Project
+### Product Vision
+For educational institutions looking to boost academic performance, Academic Dashboard is a web application that improves how students interact with course-related work assigned by professors. Unlike other similar products that are uniquely designed for a single institution, our software product was built to be adopted across different campuses and to provide a sense of familiarity to all students. Its built-in calendar, checklist, and reminders allows user to become more organized without the need to switch applications. 
+
+### Development Stack
+- [React](https://react.dev/) - Frontend Javascript Library for Building User Interfaces
+- [Nextjs 13](https://nextjs.org/) - React Web Development Framework
+- [Material UI](https://mui.com/material-ui/) - React Component Library
+- [React Hook Form](https://react-hook-form.com/) - Form Management Library
+- [Zod](https://zod.dev/) - Input Validation
+
+### Project Structure
+- src/app
